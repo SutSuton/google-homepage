@@ -3,11 +3,18 @@
 header {
     font-family: arial,sans-serif;
     font-size: 13px;
-    color: rgba(0, 0, 0, 0.87);
     }
 footer {
     font-family: arial,sans-serif;
     font-size: 14px; 
+    background-color: #f2f2f2;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #e4e4e4;
+
+}
+div {
+    text-align: center;
 }
 a {
     text-decoration: none;
@@ -24,6 +31,38 @@ ul {
 li {
 display: inline;
 }
+input[type="text"] {
+    width: 34%;
+    height: 35px;
+    border-radius: 40px;
+    border-width: 1px;
+    border-color: #e4e4e4;
+    border-style: solid;
+}
+
+#header-links a {
+    color: rgba(0, 0, 0, 0.87);
+}
+#footer-links a {
+    color:#5f6368;
+}
+#sign-in {
+    background-color: #4683ea;
+    border-width: 1px;
+    border-color: #4285f4;
+    border-radius: 3px;
+    border-style: solid;
+    font-weight: bold;
+    color: white;
+    padding: 6px 15px 6px 15px;
+}
+#apps {
+    color:#797979;
+}
+#apps:hover {
+    color:black;
+}
+
 </style>
 
 <html>
@@ -32,16 +71,17 @@ display: inline;
     </head>
     <body>
         <header>
-            <ul>
+            <ul id="header-links">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Store</a></li>
                 <li><a href="#">Gmail</a></li>
                 <li><a href="#">Images</a></li>
-                <li><a href="#"><span class="material-icons">
+                <li><a href="#"><span id="apps" class="material-icons">
                     apps</span></a></span></li>
-                <li><a href="#"><button type="button">Sign in</button></a></li>
+                <li><a href="#"><button id="sign-in" type="button">Sign in</button></a></li>
             </ul>
         </header>
+        <div>
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
         <form>
             <label for="search"></label>
@@ -49,8 +89,9 @@ display: inline;
         </form>
         <button type="button">Google Search</button>
         <button type="button">I'm Feeling Lucky</button>
+        </div>
         <footer>
-            <ul>
+            <ul id="footer-links">
                 <li><a href="#">Advertising</a></li>
                 <li><a href="#">Business</a></li>
                 <li><a href="#">How Search works</a></li>
